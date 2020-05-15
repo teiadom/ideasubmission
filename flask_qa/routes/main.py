@@ -19,8 +19,7 @@ def index():
 
     return render_template('home1.html')
 
-
-@main.route('/BlankHTML', methods=['GET', 'POST'])
+@main.route('/', methods=['GET', 'POST'])
 def ask():
     if request.method == 'POST':
         what = request.form['what']
@@ -29,6 +28,7 @@ def ask():
         idea = Idea(
             what=what,
             how=how,
+
         )
 
         db.session.add(idea)
@@ -36,4 +36,4 @@ def ask():
 
         return redirect(url_for('main.index'))
 
-    return render_template('BlankHTML.html')
+    return render_template('home1.html')
