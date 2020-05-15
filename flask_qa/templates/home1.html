@@ -4,10 +4,28 @@
     <title>Ideas</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .float-container {
+  .column {
     width: 100%;
   }
 }
@@ -28,45 +46,33 @@ h1 {
 }
 
 p {
-  text-indent: 50px;
-  text-align: justify;
+  text-indent: 0px;
+  text-align: center;
   letter-spacing: 3px;
   color:white;
 }
 
-.float-container {
-    border: 3px solid #fff;
-    padding: 20px;
-}
-
-.float-child {
-    width: 50%;
-    float: left;
-    padding: 20px;
-    border: 2px solid red;
-}
-
 </style>
 </head>
-<body>
+
 <div id="instruction">
   <h1>Ideas Based on the Problem:</h1>
   <p>We are searching for an innovative(technical) solution for the security of city buildings.
-            In the first step think of possible dangerous events, which might occur (e.g. fire).
+      In the first step think of possible dangerous events, which might occur (e.g. fire).
             Then brainstorm innovative solutions, how people in the building could be protected from such danger or
             rescued from the building.</p>
 </div>
-
-<div class="float-container">
-
-  <div class="float-child">
-    <div class="green">Float Column 1</div>
+<br>
+<br>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Enter Data:</h2>
+    <p>Some text..</p>
   </div>
-
-  <div class="float-child">
-    <div class="blue">Float Column 2</div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Examples</h2>
+    <p>Some text..</p>
   </div>
-
 </div>
 
 </body>
