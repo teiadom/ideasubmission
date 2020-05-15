@@ -36,4 +36,4 @@ def ask():
 
         return redirect(url_for('main.index'))
 
-    return render_template('home1.html')
+    return render_template('BlankHTML.html')
