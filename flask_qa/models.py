@@ -3,6 +3,7 @@
 
 from .extensions import db
 
+
 class Idea(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     what = db.Column(db.Text)
