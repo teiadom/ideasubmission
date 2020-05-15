@@ -20,7 +20,7 @@ def index():
     return render_template('home1.html')
 
 
-@main.route('/', methods=['GET', 'POST'])
+@main.route('/BlankHTML', methods=['GET', 'POST'])
 def ask():
     if request.method == 'POST':
         what = request.form['what']
