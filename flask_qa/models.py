@@ -5,6 +5,7 @@ from .extensions import db
 
 
 class Idea(db.Model):
+    tablename = 'Idea'
     id = db.Column(db.Integer, primary_key=True)
     what = db.Column(db.Text)
     how = db.Column(db.Text)
