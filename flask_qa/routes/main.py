@@ -17,4 +17,4 @@ def index():
     #   'questions' : questions
     # }
 
-    return render_template('home.html')
+    return render_template('home1.html')
