@@ -15,6 +15,14 @@
   padding: 10px;
   height: 450px; /* Should be removed. Only for demonstration */
 }
+.purpose{
+	color: red;
+    font-size: 25px;
+}
+
+.form-control{
+    width: 100px;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -68,7 +76,7 @@ p {
   <div class="column" style="background-color:#aaa;">
     <h2>Enter Data:</h2>
     <div class="form-group">
-                  <label for="textArea" class="col-lg-2 control-label">What is your idea (Purpose):</label>
+                  <label for="textArea" class="purpose">What is your idea (Purpose):</label>
                     <div class="col-lg-10">
                       <textarea class="form-control" name="what" rows="2" id="textArea1" required></textarea>
                     </div>
