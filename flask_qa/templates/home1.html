@@ -136,31 +136,34 @@ p {
 <div class="row">
   <div class="column" style="background-color:#141835;">
     <h2>Enter Data:</h2>
-    <div class="form-group">
+     <form class="form-horizontal" method="POST" action="{{ url_for('main.index') }}">
+              <fieldset>
+                <div class="form-group">
                   <label for="textArea" class="purpose">What is your idea (Purpose):</label>
                     <div class="col-lg-10">
                         <br>
-
                       <textarea class="form-control" name="what" rows="2" id="textArea1" required></textarea>
+
                     </div>
                   </div>
                  <div class="form-group">
-                     <br>
                   <label for="textArea" class="purpose">How it works (Mechanism):</label>
                     <div class="col-lg-10">
                         <br>
                       <textarea class="form-control" name="how" rows="2" id="textArea" required></textarea>
-
                     </div>
                   </div>
-                    <br>
+
                   <div class="form-group">
                     <div class="col-lg-10 col-lg-offset-2">
+                        <br>
                       <button type="submit" class="button subBtn">Submit</button>
                     </div>
                   </div>
-  </div>
 
+                </fieldset>
+              </form>
+  </div>
   <div class="column" style="background-color:#aaa;">
     <h2 class = "h2Eg">Examples:</h2>
     <table id="examples">
